@@ -1,0 +1,380 @@
+{% extends 'shop/basic.html' %}
+ {% block css %}
+
+          body{
+           {% load static %}
+           background-image: url('{% static 'shop/background.jpg'" %}');
+           backdrop-filter: blur(3px);
+           }
+
+
+           .welcome{
+           font-family: 'Segoe UI Symbol',sans-serif;
+           font-size: 6vh;
+           padding:40px 0px;
+
+          width:80%;
+          height:300px;
+              {% load static %}
+           background-image: url('{% static 'shop/qoutebg.jpg'" %}');
+          color:white;
+          text-align:center;
+          position:relative;
+          top:10px;
+          left:9.5%;
+
+          }
+
+
+
+<!--          .col-md-3-->
+<!--          {-->
+<!--          display: inline-block;-->
+<!--          margin-left:-4px;-->
+<!--          }-->
+<!--          .carousel-indicators .active {-->
+<!--          background-color: blue;-->
+<!--            }-->
+<!--          .col-md-3 img{-->
+<!--          width:100%;-->
+<!--          height:auto;-->
+<!--          }-->
+<!--          body .carousel-indicator li{-->
+<!--          background-color: blue;-->
+<!--          }-->
+<!--          body .carousel-indicators{-->
+<!--          bottom: 0;-->
+<!--          }-->
+<!--          body .carousel-control-prev-icon,-->
+<!--          body .carousel-control-next-icon{-->
+<!--          background-color: blue;-->
+<!--          }-->
+<!--           body .no-padding{-->
+<!--           padding-left: 0,-->
+<!--           padding-right: 0;-->
+<!--           }-->
+.work{
+height: 25vh;
+    text-align: center;
+    background-color: #c1f3c1;
+    color: black;
+    padding: 6vh;
+    font-family: emoji;
+    font-weight: bolder;
+}
+.bi{    height: 278px;
+    width: 32.5%;
+}
+.bb{
+
+    font-size: larger;
+    font-family: auto;
+    border:solid;
+}
+            .box{
+                 color: #000000;
+    /* background-color: #4c7f67; */
+    width: 96vw;
+    height: 300px;
+    padding: 20px 40px;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 3vw 2vw;
+text-align:center;
+             }
+<!--           footer{-->
+
+<!--           heigth: 30 px;-->
+<!--           width:100%;-->
+<!--           background-color: white;-->
+<!--           color: black;-->
+<!--           text-align: center;-->
+<!--           padding: 10px;-->
+<!--           position: relative;-->
+<!--           bottom:0px;-->
+<!--           }-->
+
+<!--           .container{-->
+<!--           color: rgb(21, 31, 66);-->
+<!--          }-->
+    .formclass{width: 40vw;
+    height: 57vh;
+    background-color: antiquewhite;
+    color: #1d1818;
+    position: relative;
+    float: right;
+    padding: 2vh;
+    margin: 2vh 5vh;
+    border: solid 2px;
+    /* text-align: center;
+    }
+
+}
+
+
+{% endblock %}
+
+ {% block body %}
+
+
+  <div class="welcome">
+      Welcome to VUGS Technologies!
+<br>
+      here comes the tagline!
+  </div>
+
+
+<div class="box">
+    At VUGS Technologies, we believe that our solutions will soon become one of the biggest segments in the industry.
+    We’ve only just started, but we already know that every product we build requires hard-earned skills, dedication
+    and a daring attitude. <br>Continue reading and learn all there is to know about the smart tech behind our successful
+    Software Startup.
+</div>
+
+   <!--        carousel indicators starts from here-->
+
+<!--    <div class="container">-->
+<!--        <div id="demo" class="carousel slide my-3" data-ride="carousel">-->
+<!--    <ul class="carousel-indicators">-->
+<!--      <li data-target="#demo" data-slide-to="0" class="active"></li>-->
+<!--      <li data-target="#demo" data-slide-to="1" ></li>-->
+<!--      <li data-target="#demo" data-slide-to="2" ></li>-->
+<!--    </ul>-->
+
+<!--          <div class="carousel-inner">-->
+<!--            <div class="carousel-item active">-->
+<!--              <div class="row">-->
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--                  <div class="card" style="width: 18rem;">-->
+<!--                    <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                      <h5 class="card-title">Product 1</h5>-->
+<!--                      <p class="card-text">Description about Product 1!</p>-->
+<!--                      <a href="#" class="btn btn-primary">Product1 Page</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--                  <div class="card" style="width: 18rem;">-->
+<!--                    <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                      <h5 class="card-title">Product 2</h5>-->
+<!--                      <p class="card-text">Description about Product 2!</p>-->
+<!--                      <a href="#" class="btn btn-primary">Product2 Page</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--                  <div class="card" style="width: 18rem;">-->
+<!--                    <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                      <h5 class="card-title">Product 3</h5>-->
+<!--                      <p class="card-text">Description about Product 3!</p>-->
+<!--                      <a href="#" class="btn btn-primary">Product3 Page</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--                  <div class="card" style="width: 18rem;">-->
+<!--                    <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                      <h5 class="card-title">Product 4</h5>-->
+<!--                      <p class="card-text">Description about Product 4!</p>-->
+<!--                      <a href="#" class="btn btn-primary">Product4 Page</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+<!--            <div class="carousel-item">-->
+<!--              <div class="row">-->
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--                  <div class="card" style="width: 18rem;">-->
+<!--                    <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                      <h5 class="card-title">Card title</h5>-->
+<!--                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+<!--                        card's content.</p>-->
+<!--                      <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--                  <div class="card" style="width: 18rem;">-->
+<!--                    <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                      <h5 class="card-title">Card title</h5>-->
+<!--                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+<!--                        card's content.</p>-->
+<!--                      <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--                  <div class="card" style="width: 18rem;">-->
+<!--                    <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                      <h5 class="card-title">Card title</h5>-->
+<!--                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+<!--                        card's content.</p>-->
+<!--                      <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--                  <div class="card" style="width: 18rem;">-->
+<!--                    <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--                    <div class="card-body">-->
+<!--                      <h5 class="card-title">Card title</h5>-->
+<!--                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+<!--                        card's content.</p>-->
+<!--                      <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+<!--            <div class="carousel-item">-->
+
+<!--              <div class="row">-->
+<!--      <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--        <div class="card" style="width: 18rem;">-->
+<!--          <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">Card title</h5>-->
+<!--            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+<!--              card's content.</p>-->
+<!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--        <div class="card" style="width: 18rem;">-->
+<!--          <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">Card title</h5>-->
+<!--            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+<!--              card's content.</p>-->
+<!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--        <div class="card" style="width: 18rem;">-->
+<!--          <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">Card title</h5>-->
+<!--            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+<!--              card's content.</p>-->
+<!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-xs-3 col-sm-3 col-md-3">-->
+<!--        <div class="card" style="width: 18rem;">-->
+<!--          <img src='{% static "shop/colleagues.jpg" %}' class="card-img-top" alt="...">-->
+<!--          <div class="card-body">-->
+<!--            <h5 class="card-title">Card title</h5>-->
+<!--            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the-->
+<!--              card's content.</p>-->
+<!--            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    <a class="carousel-control-prev " href="#demo" role="button" data-slide="prev">-->
+<!--        <span class="carousel-control-prev-icon"></span>-->
+<!--        <span class="sr-only">Previous</span>-->
+<!--      </a>-->
+<!--      <a class="carousel-control-next" href="#demo" role="button" data-slide="next">-->
+<!--        <span class="carousel-control-next-icon"></span>-->
+<!--        <span class="sr-only">Next</span>-->
+<!--      </a>-->
+<section class="container">
+
+
+                    <h1 class="work text-6xl">Want to work with us!</h1>
+
+                <div >
+<!--                    <div class="imgi">-->
+
+                            <img src='{% static 'shop/internship.jpg'" %}' alt="" height="278px" style="width: 33.33%">
+                            <img src='{% static 'shop/jobs.jpg'" %}' alt="" height="278px" style="width: 33.33%">
+                    <div class="bi btn-group-vertical">
+                        <button type="button" class="btn btn-info bb">Apply For Job!</button>
+                        <button type="button" class="btn btn-info bb">Apply For Internship!</button>
+                    </div>
+
+<!--                    </div>-->
+
+<!--                    <div class="buttoni ">-->
+<!--                        <button>-->
+<!--                            <span>-->
+<!--                                Apply For Internship!-->
+<!--                            </span>-->
+<!--                        </button>-->
+
+<!--                        <button>-->
+<!--                            <span>-->
+<!--                                Apply For Job!-->
+<!--                            </span>-->
+<!--                        </button>-->
+                    </div>
+<!--                </div>-->
+
+
+    </section>
+<div class="formclass">
+    <h1>Schedule a meeting!</h1>
+    <form>
+
+
+        <div class="form-group">
+    <label for="exampleFormControlInput1">Name</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+  </div>
+        <div class="form-group">
+    <label for="exampleFormControlInput1">Contact No.</label>
+    <input type="phone" class="form-control" id="exampleFormControlInput2" placeholder="xxxxxxxxxx">
+  </div>
+
+        <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+  </div>
+<br>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Set up a meeting with our sales representative.
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+   Request for a demo.
+  </label>
+</div>
+        <br>
+       <button type="button" class="btn btn-dark">SUBMIT</button>
+
+<!--  <div class="form-group">-->
+<!--    <label for="exampleFormControlTextarea1">Example textarea</label>-->
+<!--    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>-->
+<!--  </div>-->
+</form>
+
+</div>
+
+<!--  <footer>-->
+<!--    Copyright &copy; VUGS Technologies - All rights reserved-->
+<!--  </footer>-->
+{% endblock %}
